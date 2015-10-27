@@ -23,20 +23,5 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
-	<mvc:resources mapping="/resources/**" location="/resources/" />
-    <mvc:annotation-driven />
-    
-	<!-- declare datasource bean -->
-	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/db_new" />
-		<property name="username" value="root" />
-		<property name="password" value="" />
-	</bean>
-	
-	<!-- declare beans -->
-<!-- 	<bean id="provinceDao" class="com.Room.dao.ProvinceDaoImpl"/>
-	<bean id="provinceService" class="com.Room.services.ProvinceServiceImpl" /> -->
 
 </beans>
